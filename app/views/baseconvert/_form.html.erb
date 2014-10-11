@@ -1,0 +1,16 @@
+<%= form_tag convert_path do %>
+  <div class="field">
+    <%= label_tag "Number" %>
+    <%= text_field_tag :number %>
+  </div>
+  <div class="field">
+    <%= label_tag "Input Base" %>
+    <%= number_field_tag :inbase %>
+  </div>
+  <div class="field">
+    <%= label_tag "Output Base" %>
+    <%= number_field_tag :target %>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Convert", class: "btn btn-warning" %>
+<% end %>
